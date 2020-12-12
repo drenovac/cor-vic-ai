@@ -1,0 +1,55 @@
+# Project information
+site_name: nv_internals (live site)
+site_url: https://www.rosterme.com.au/internals
+site_description: nv_internals (Collection of documentation (moving from paper to web))
+site_author: Martin Drenovac & helpdesk@powerforcesoftware.com
+
+# Repository
+repo_url: https://www.rosterme.com.au/internals
+# Copyright
+copyright: Copyright &copy; 2019-2020 <a href="https://twitter.com/drenovac">Envizion Systems</a>.
+
+nav:
+  - Home: index.md
+  - Development Requirments: requirements.md
+  - Dashboard:
+      - DB-1: dashboard-1.md
+      - DB-2: dashboard-2.md
+ 
+
+# mkdocs configuration settings
+# # theme: material
+# theme: simplex
+theme: readthedocs
+#    name: simplex
+#    name: journal
+# Extensions
+markdown_extensions:
+  #  - smarty
+  #  - admonition
+  - codehilite:
+      guess_lang: true
+  - toc:
+      permalink: '#'
+
+# Google Analytics
+google_analytics:
+  - 'UA-XXXXXXXX-X'
+  - 'auto'
+
+# Customization
+extra:
+  social:
+    - type: 'github'
+      link: 'https://github.com/drenovac'
+    - type: 'twitter'
+      link: 'https://twitter.com/drenovac'
+    - type: 'linkedin'
+      link: 'https://linkedin.com/drenovac'
+
+plugins:
+  - search
+stylesheets:
+  - https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css
+
+  # mkdocs serve --dev-addr=0.0.0.0:8000
